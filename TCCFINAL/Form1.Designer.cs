@@ -39,47 +39,47 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txt2m5 = new System.Windows.Forms.TextBox();
-            this.txt2m4 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.txtRm2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txt2m3 = new System.Windows.Forms.TextBox();
-            this.txt2m2 = new System.Windows.Forms.TextBox();
-            this.txt2m1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.txt6m5 = new System.Windows.Forms.TextBox();
-            this.txt6m4 = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.txtrm6 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.txt6m3 = new System.Windows.Forms.TextBox();
-            this.txt6m2 = new System.Windows.Forms.TextBox();
-            this.txt6m1 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.txt8m5 = new System.Windows.Forms.TextBox();
-            this.txt8m4 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.txtrm8 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txt8m3 = new System.Windows.Forms.TextBox();
-            this.txt8m2 = new System.Windows.Forms.TextBox();
-            this.txt8m1 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txt4m5 = new System.Windows.Forms.TextBox();
-            this.txt4m4 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.txtRm4 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txt4m3 = new System.Windows.Forms.TextBox();
-            this.txt4m2 = new System.Windows.Forms.TextBox();
-            this.txt4m1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.txt4m5 = new TCCFINAL.DecimalTextBox();
+            this.txt4m4 = new TCCFINAL.DecimalTextBox();
+            this.txt4m3 = new TCCFINAL.DecimalTextBox();
+            this.txt4m2 = new TCCFINAL.DecimalTextBox();
+            this.txt4m1 = new TCCFINAL.DecimalTextBox();
+            this.txt8m5 = new TCCFINAL.DecimalTextBox();
+            this.txt8m4 = new TCCFINAL.DecimalTextBox();
+            this.txt8m3 = new TCCFINAL.DecimalTextBox();
+            this.txt8m2 = new TCCFINAL.DecimalTextBox();
+            this.txt8m1 = new TCCFINAL.DecimalTextBox();
+            this.txt6m5 = new TCCFINAL.DecimalTextBox();
+            this.txt6m4 = new TCCFINAL.DecimalTextBox();
+            this.txt6m3 = new TCCFINAL.DecimalTextBox();
+            this.txt6m2 = new TCCFINAL.DecimalTextBox();
+            this.txt6m1 = new TCCFINAL.DecimalTextBox();
+            this.txt2m5 = new TCCFINAL.DecimalTextBox();
+            this.txt2m4 = new TCCFINAL.DecimalTextBox();
+            this.txt2m3 = new TCCFINAL.DecimalTextBox();
+            this.txt2m2 = new TCCFINAL.DecimalTextBox();
+            this.txt2m1 = new TCCFINAL.DecimalTextBox();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -167,12 +167,12 @@
             // 
             this.groupBox1.Controls.Add(this.txt2m5);
             this.groupBox1.Controls.Add(this.txt2m4);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.txtRm2);
-            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txt2m3);
             this.groupBox1.Controls.Add(this.txt2m2);
             this.groupBox1.Controls.Add(this.txt2m1);
+            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.txtRm2);
+            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(12, 99);
             this.groupBox1.Name = "groupBox1";
@@ -182,20 +182,6 @@
             this.groupBox1.Text = "Distância: 2 metros";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // txt2m5
-            // 
-            this.txt2m5.Location = new System.Drawing.Point(10, 141);
-            this.txt2m5.Name = "txt2m5";
-            this.txt2m5.Size = new System.Drawing.Size(123, 20);
-            this.txt2m5.TabIndex = 8;
-            // 
-            // txt2m4
-            // 
-            this.txt2m4.Location = new System.Drawing.Point(10, 115);
-            this.txt2m4.Name = "txt2m4";
-            this.txt2m4.Size = new System.Drawing.Size(123, 20);
-            this.txt2m4.TabIndex = 7;
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(155, 63);
@@ -204,6 +190,7 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "Calcular Resistividade Média";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // txtRm2
             // 
@@ -220,27 +207,6 @@
             this.label3.Size = new System.Drawing.Size(105, 13);
             this.label3.TabIndex = 4;
             this.label3.Text = "Resistividade Média:";
-            // 
-            // txt2m3
-            // 
-            this.txt2m3.Location = new System.Drawing.Point(10, 89);
-            this.txt2m3.Name = "txt2m3";
-            this.txt2m3.Size = new System.Drawing.Size(123, 20);
-            this.txt2m3.TabIndex = 3;
-            // 
-            // txt2m2
-            // 
-            this.txt2m2.Location = new System.Drawing.Point(10, 63);
-            this.txt2m2.Name = "txt2m2";
-            this.txt2m2.Size = new System.Drawing.Size(123, 20);
-            this.txt2m2.TabIndex = 2;
-            // 
-            // txt2m1
-            // 
-            this.txt2m1.Location = new System.Drawing.Point(10, 37);
-            this.txt2m1.Name = "txt2m1";
-            this.txt2m1.Size = new System.Drawing.Size(123, 20);
-            this.txt2m1.TabIndex = 1;
             // 
             // label2
             // 
@@ -259,6 +225,7 @@
             this.button5.TabIndex = 7;
             this.button5.Text = "Gerar Gráfico";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -273,12 +240,12 @@
             // 
             this.groupBox4.Controls.Add(this.txt6m5);
             this.groupBox4.Controls.Add(this.txt6m4);
-            this.groupBox4.Controls.Add(this.button4);
-            this.groupBox4.Controls.Add(this.textBox15);
-            this.groupBox4.Controls.Add(this.label8);
             this.groupBox4.Controls.Add(this.txt6m3);
             this.groupBox4.Controls.Add(this.txt6m2);
             this.groupBox4.Controls.Add(this.txt6m1);
+            this.groupBox4.Controls.Add(this.button4);
+            this.groupBox4.Controls.Add(this.txtrm6);
+            this.groupBox4.Controls.Add(this.label8);
             this.groupBox4.Controls.Add(this.label9);
             this.groupBox4.Location = new System.Drawing.Point(407, 99);
             this.groupBox4.Name = "groupBox4";
@@ -286,20 +253,6 @@
             this.groupBox4.TabIndex = 9;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Distância: 6 metros";
-            // 
-            // txt6m5
-            // 
-            this.txt6m5.Location = new System.Drawing.Point(10, 141);
-            this.txt6m5.Name = "txt6m5";
-            this.txt6m5.Size = new System.Drawing.Size(123, 20);
-            this.txt6m5.TabIndex = 8;
-            // 
-            // txt6m4
-            // 
-            this.txt6m4.Location = new System.Drawing.Point(10, 115);
-            this.txt6m4.Name = "txt6m4";
-            this.txt6m4.Size = new System.Drawing.Size(123, 20);
-            this.txt6m4.TabIndex = 7;
             // 
             // button4
             // 
@@ -309,13 +262,14 @@
             this.button4.TabIndex = 6;
             this.button4.Text = "Calcular Resistividade Média";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // textBox15
+            // txtrm6
             // 
-            this.textBox15.Location = new System.Drawing.Point(157, 37);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(123, 20);
-            this.textBox15.TabIndex = 5;
+            this.txtrm6.Location = new System.Drawing.Point(157, 37);
+            this.txtrm6.Name = "txtrm6";
+            this.txtrm6.Size = new System.Drawing.Size(123, 20);
+            this.txtrm6.TabIndex = 5;
             // 
             // label8
             // 
@@ -325,27 +279,6 @@
             this.label8.Size = new System.Drawing.Size(105, 13);
             this.label8.TabIndex = 4;
             this.label8.Text = "Resistividade Média:";
-            // 
-            // txt6m3
-            // 
-            this.txt6m3.Location = new System.Drawing.Point(10, 89);
-            this.txt6m3.Name = "txt6m3";
-            this.txt6m3.Size = new System.Drawing.Size(123, 20);
-            this.txt6m3.TabIndex = 3;
-            // 
-            // txt6m2
-            // 
-            this.txt6m2.Location = new System.Drawing.Point(10, 63);
-            this.txt6m2.Name = "txt6m2";
-            this.txt6m2.Size = new System.Drawing.Size(123, 20);
-            this.txt6m2.TabIndex = 2;
-            // 
-            // txt6m1
-            // 
-            this.txt6m1.Location = new System.Drawing.Point(10, 37);
-            this.txt6m1.Name = "txt6m1";
-            this.txt6m1.Size = new System.Drawing.Size(123, 20);
-            this.txt6m1.TabIndex = 1;
             // 
             // label9
             // 
@@ -360,12 +293,12 @@
             // 
             this.groupBox3.Controls.Add(this.txt8m5);
             this.groupBox3.Controls.Add(this.txt8m4);
-            this.groupBox3.Controls.Add(this.button3);
-            this.groupBox3.Controls.Add(this.textBox11);
-            this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.txt8m3);
             this.groupBox3.Controls.Add(this.txt8m2);
             this.groupBox3.Controls.Add(this.txt8m1);
+            this.groupBox3.Controls.Add(this.button3);
+            this.groupBox3.Controls.Add(this.txtrm8);
+            this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Location = new System.Drawing.Point(407, 310);
             this.groupBox3.Name = "groupBox3";
@@ -373,20 +306,6 @@
             this.groupBox3.TabIndex = 10;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Distância: 8 metros";
-            // 
-            // txt8m5
-            // 
-            this.txt8m5.Location = new System.Drawing.Point(10, 141);
-            this.txt8m5.Name = "txt8m5";
-            this.txt8m5.Size = new System.Drawing.Size(123, 20);
-            this.txt8m5.TabIndex = 8;
-            // 
-            // txt8m4
-            // 
-            this.txt8m4.Location = new System.Drawing.Point(10, 115);
-            this.txt8m4.Name = "txt8m4";
-            this.txt8m4.Size = new System.Drawing.Size(123, 20);
-            this.txt8m4.TabIndex = 7;
             // 
             // button3
             // 
@@ -396,13 +315,14 @@
             this.button3.TabIndex = 6;
             this.button3.Text = "Calcular Resistividade Média";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // textBox11
+            // txtrm8
             // 
-            this.textBox11.Location = new System.Drawing.Point(157, 37);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(123, 20);
-            this.textBox11.TabIndex = 5;
+            this.txtrm8.Location = new System.Drawing.Point(157, 37);
+            this.txtrm8.Name = "txtrm8";
+            this.txtrm8.Size = new System.Drawing.Size(123, 20);
+            this.txtrm8.TabIndex = 5;
             // 
             // label6
             // 
@@ -412,27 +332,6 @@
             this.label6.Size = new System.Drawing.Size(105, 13);
             this.label6.TabIndex = 4;
             this.label6.Text = "Resistividade Média:";
-            // 
-            // txt8m3
-            // 
-            this.txt8m3.Location = new System.Drawing.Point(10, 89);
-            this.txt8m3.Name = "txt8m3";
-            this.txt8m3.Size = new System.Drawing.Size(123, 20);
-            this.txt8m3.TabIndex = 3;
-            // 
-            // txt8m2
-            // 
-            this.txt8m2.Location = new System.Drawing.Point(10, 63);
-            this.txt8m2.Name = "txt8m2";
-            this.txt8m2.Size = new System.Drawing.Size(123, 20);
-            this.txt8m2.TabIndex = 2;
-            // 
-            // txt8m1
-            // 
-            this.txt8m1.Location = new System.Drawing.Point(10, 37);
-            this.txt8m1.Name = "txt8m1";
-            this.txt8m1.Size = new System.Drawing.Size(123, 20);
-            this.txt8m1.TabIndex = 1;
             // 
             // label7
             // 
@@ -447,12 +346,12 @@
             // 
             this.groupBox2.Controls.Add(this.txt4m5);
             this.groupBox2.Controls.Add(this.txt4m4);
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.txtRm4);
-            this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.txt4m3);
             this.groupBox2.Controls.Add(this.txt4m2);
             this.groupBox2.Controls.Add(this.txt4m1);
+            this.groupBox2.Controls.Add(this.button2);
+            this.groupBox2.Controls.Add(this.txtRm4);
+            this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Location = new System.Drawing.Point(12, 310);
             this.groupBox2.Name = "groupBox2";
@@ -460,20 +359,6 @@
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Distância: 4 metros";
-            // 
-            // txt4m5
-            // 
-            this.txt4m5.Location = new System.Drawing.Point(10, 141);
-            this.txt4m5.Name = "txt4m5";
-            this.txt4m5.Size = new System.Drawing.Size(123, 20);
-            this.txt4m5.TabIndex = 8;
-            // 
-            // txt4m4
-            // 
-            this.txt4m4.Location = new System.Drawing.Point(10, 115);
-            this.txt4m4.Name = "txt4m4";
-            this.txt4m4.Size = new System.Drawing.Size(123, 20);
-            this.txt4m4.TabIndex = 7;
             // 
             // button2
             // 
@@ -483,6 +368,7 @@
             this.button2.TabIndex = 6;
             this.button2.Text = "Calcular Resistividade Média";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // txtRm4
             // 
@@ -500,27 +386,6 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Resistividade Média:";
             // 
-            // txt4m3
-            // 
-            this.txt4m3.Location = new System.Drawing.Point(10, 89);
-            this.txt4m3.Name = "txt4m3";
-            this.txt4m3.Size = new System.Drawing.Size(123, 20);
-            this.txt4m3.TabIndex = 3;
-            // 
-            // txt4m2
-            // 
-            this.txt4m2.Location = new System.Drawing.Point(10, 63);
-            this.txt4m2.Name = "txt4m2";
-            this.txt4m2.Size = new System.Drawing.Size(123, 20);
-            this.txt4m2.TabIndex = 2;
-            // 
-            // txt4m1
-            // 
-            this.txt4m1.Location = new System.Drawing.Point(10, 37);
-            this.txt4m1.Name = "txt4m1";
-            this.txt4m1.Size = new System.Drawing.Size(123, 20);
-            this.txt4m1.TabIndex = 1;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -529,6 +394,186 @@
             this.label5.Size = new System.Drawing.Size(111, 13);
             this.label5.TabIndex = 0;
             this.label5.Text = "Resistividade Medida:";
+            // 
+            // txt4m5
+            // 
+            this.txt4m5.Location = new System.Drawing.Point(10, 140);
+            this.txt4m5.Name = "txt4m5";
+            this.txt4m5.Precision = 3;
+            this.txt4m5.Size = new System.Drawing.Size(127, 20);
+            this.txt4m5.TabIndex = 21;
+            this.txt4m5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txt4m4
+            // 
+            this.txt4m4.Location = new System.Drawing.Point(10, 115);
+            this.txt4m4.Name = "txt4m4";
+            this.txt4m4.Precision = 3;
+            this.txt4m4.Size = new System.Drawing.Size(127, 20);
+            this.txt4m4.TabIndex = 20;
+            this.txt4m4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txt4m3
+            // 
+            this.txt4m3.Location = new System.Drawing.Point(10, 89);
+            this.txt4m3.Name = "txt4m3";
+            this.txt4m3.Precision = 3;
+            this.txt4m3.Size = new System.Drawing.Size(127, 20);
+            this.txt4m3.TabIndex = 19;
+            this.txt4m3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txt4m2
+            // 
+            this.txt4m2.Location = new System.Drawing.Point(10, 63);
+            this.txt4m2.Name = "txt4m2";
+            this.txt4m2.Precision = 3;
+            this.txt4m2.Size = new System.Drawing.Size(127, 20);
+            this.txt4m2.TabIndex = 18;
+            this.txt4m2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txt4m1
+            // 
+            this.txt4m1.Location = new System.Drawing.Point(10, 37);
+            this.txt4m1.Name = "txt4m1";
+            this.txt4m1.Precision = 3;
+            this.txt4m1.Size = new System.Drawing.Size(127, 20);
+            this.txt4m1.TabIndex = 17;
+            this.txt4m1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txt8m5
+            // 
+            this.txt8m5.Location = new System.Drawing.Point(6, 140);
+            this.txt8m5.Name = "txt8m5";
+            this.txt8m5.Precision = 3;
+            this.txt8m5.Size = new System.Drawing.Size(127, 20);
+            this.txt8m5.TabIndex = 21;
+            this.txt8m5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txt8m4
+            // 
+            this.txt8m4.Location = new System.Drawing.Point(6, 115);
+            this.txt8m4.Name = "txt8m4";
+            this.txt8m4.Precision = 3;
+            this.txt8m4.Size = new System.Drawing.Size(127, 20);
+            this.txt8m4.TabIndex = 20;
+            this.txt8m4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txt8m3
+            // 
+            this.txt8m3.Location = new System.Drawing.Point(6, 89);
+            this.txt8m3.Name = "txt8m3";
+            this.txt8m3.Precision = 3;
+            this.txt8m3.Size = new System.Drawing.Size(127, 20);
+            this.txt8m3.TabIndex = 19;
+            this.txt8m3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txt8m2
+            // 
+            this.txt8m2.Location = new System.Drawing.Point(6, 63);
+            this.txt8m2.Name = "txt8m2";
+            this.txt8m2.Precision = 3;
+            this.txt8m2.Size = new System.Drawing.Size(127, 20);
+            this.txt8m2.TabIndex = 18;
+            this.txt8m2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txt8m1
+            // 
+            this.txt8m1.Location = new System.Drawing.Point(6, 37);
+            this.txt8m1.Name = "txt8m1";
+            this.txt8m1.Precision = 3;
+            this.txt8m1.Size = new System.Drawing.Size(127, 20);
+            this.txt8m1.TabIndex = 17;
+            this.txt8m1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txt6m5
+            // 
+            this.txt6m5.Location = new System.Drawing.Point(6, 140);
+            this.txt6m5.Name = "txt6m5";
+            this.txt6m5.Precision = 3;
+            this.txt6m5.Size = new System.Drawing.Size(127, 20);
+            this.txt6m5.TabIndex = 21;
+            this.txt6m5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txt6m4
+            // 
+            this.txt6m4.Location = new System.Drawing.Point(6, 115);
+            this.txt6m4.Name = "txt6m4";
+            this.txt6m4.Precision = 3;
+            this.txt6m4.Size = new System.Drawing.Size(127, 20);
+            this.txt6m4.TabIndex = 20;
+            this.txt6m4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txt6m3
+            // 
+            this.txt6m3.Location = new System.Drawing.Point(6, 89);
+            this.txt6m3.Name = "txt6m3";
+            this.txt6m3.Precision = 3;
+            this.txt6m3.Size = new System.Drawing.Size(127, 20);
+            this.txt6m3.TabIndex = 19;
+            this.txt6m3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txt6m2
+            // 
+            this.txt6m2.Location = new System.Drawing.Point(6, 63);
+            this.txt6m2.Name = "txt6m2";
+            this.txt6m2.Precision = 3;
+            this.txt6m2.Size = new System.Drawing.Size(127, 20);
+            this.txt6m2.TabIndex = 18;
+            this.txt6m2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txt6m1
+            // 
+            this.txt6m1.Location = new System.Drawing.Point(6, 37);
+            this.txt6m1.Name = "txt6m1";
+            this.txt6m1.Precision = 3;
+            this.txt6m1.Size = new System.Drawing.Size(127, 20);
+            this.txt6m1.TabIndex = 17;
+            this.txt6m1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txt2m5
+            // 
+            this.txt2m5.Location = new System.Drawing.Point(6, 140);
+            this.txt2m5.Name = "txt2m5";
+            this.txt2m5.Precision = 3;
+            this.txt2m5.Size = new System.Drawing.Size(127, 20);
+            this.txt2m5.TabIndex = 16;
+            this.txt2m5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txt2m4
+            // 
+            this.txt2m4.Location = new System.Drawing.Point(6, 115);
+            this.txt2m4.Name = "txt2m4";
+            this.txt2m4.Precision = 3;
+            this.txt2m4.Size = new System.Drawing.Size(127, 20);
+            this.txt2m4.TabIndex = 15;
+            this.txt2m4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txt2m3
+            // 
+            this.txt2m3.Location = new System.Drawing.Point(6, 89);
+            this.txt2m3.Name = "txt2m3";
+            this.txt2m3.Precision = 3;
+            this.txt2m3.Size = new System.Drawing.Size(127, 20);
+            this.txt2m3.TabIndex = 14;
+            this.txt2m3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txt2m2
+            // 
+            this.txt2m2.Location = new System.Drawing.Point(6, 63);
+            this.txt2m2.Name = "txt2m2";
+            this.txt2m2.Precision = 3;
+            this.txt2m2.Size = new System.Drawing.Size(127, 20);
+            this.txt2m2.TabIndex = 13;
+            this.txt2m2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txt2m1
+            // 
+            this.txt2m1.Location = new System.Drawing.Point(6, 37);
+            this.txt2m1.Name = "txt2m1";
+            this.txt2m1.Precision = 3;
+            this.txt2m1.Size = new System.Drawing.Size(127, 20);
+            this.txt2m1.TabIndex = 12;
+            this.txt2m1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Form1
             // 
@@ -579,45 +624,45 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtRm2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txt2m3;
-        private System.Windows.Forms.TextBox txt2m2;
-        private System.Windows.Forms.TextBox txt2m1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.TextBox txt2m5;
-        private System.Windows.Forms.TextBox txt2m4;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.TextBox txt6m5;
-        private System.Windows.Forms.TextBox txt6m4;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox txtrm6;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txt6m3;
-        private System.Windows.Forms.TextBox txt6m2;
-        private System.Windows.Forms.TextBox txt6m1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox txt8m5;
-        private System.Windows.Forms.TextBox txt8m4;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox txtrm8;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txt8m3;
-        private System.Windows.Forms.TextBox txt8m2;
-        private System.Windows.Forms.TextBox txt8m1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox txt4m5;
-        private System.Windows.Forms.TextBox txt4m4;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox txtRm4;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txt4m3;
-        private System.Windows.Forms.TextBox txt4m2;
-        private System.Windows.Forms.TextBox txt4m1;
         private System.Windows.Forms.Label label5;
+        private DecimalTextBox txt2m1;
+        private DecimalTextBox txt2m5;
+        private DecimalTextBox txt2m4;
+        private DecimalTextBox txt2m3;
+        private DecimalTextBox txt2m2;
+        private DecimalTextBox txt6m5;
+        private DecimalTextBox txt6m4;
+        private DecimalTextBox txt6m3;
+        private DecimalTextBox txt6m2;
+        private DecimalTextBox txt6m1;
+        private DecimalTextBox txt8m5;
+        private DecimalTextBox txt8m4;
+        private DecimalTextBox txt8m3;
+        private DecimalTextBox txt8m2;
+        private DecimalTextBox txt8m1;
+        private DecimalTextBox txt4m5;
+        private DecimalTextBox txt4m4;
+        private DecimalTextBox txt4m3;
+        private DecimalTextBox txt4m2;
+        private DecimalTextBox txt4m1;
     }
 }
 

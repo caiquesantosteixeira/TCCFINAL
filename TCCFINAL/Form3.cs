@@ -21,5 +21,11 @@ namespace TCCFINAL
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var form4 = new Form4();
+            form4.ShowDialog();
+        }
     }
 }

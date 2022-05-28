@@ -87,9 +87,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Revenue.cs" />
-    <Compile Include="System\Windows\Forms\DecimalTextBox.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="System\Windows\Forms\DecimalTextBox.cs" />
     <Compile Include="util\PastRejectReasons.cs">
       <SubType>Component</SubType>
     </Compile>
