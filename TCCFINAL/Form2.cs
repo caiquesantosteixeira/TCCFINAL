@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Windows.Media;
 using LiveCharts;
 using LiveCharts.Defaults;
 using LiveCharts.Wpf;
@@ -15,23 +15,12 @@ namespace TCCFINAL
 {
     public partial class Form2 : Form
     {
-        private decimal _val1;
-        private decimal _val2;
-        private decimal _val3;
-        private decimal _val4;
         public Form2()
         {
             InitializeComponent();
-            PopulateChart();
-        }
-
-        public Form2(decimal val1,decimal val2, decimal val3, decimal val4)
-        {
-            _val1 = val1;
-            _val2 = val2;
-            _val3 = val3;
-            _val4 = val4;
-            InitializeComponent();
+            this.Location = new Point(5, 5);
+            this.TopMost = true;
+            this.StartPosition = FormStartPosition.Manual;
             PopulateChart();
         }
 
@@ -45,9 +34,32 @@ namespace TCCFINAL
                 Y = 0
             });
 
+            var lista2 = new List<ObservablePoint>();
+
+
+            lista2.Add(new ObservablePoint
+            {
+                X = 0,
+                Y = 62
+            });
+
+            var lista3 = new List<ObservablePoint>();
+
+            lista3.Add(new ObservablePoint
+            {
+                X = 10,
+                Y = 0
+            });
+
+            var lista4 = new List<ObservablePoint>();
+
+            lista4.Add(new ObservablePoint
+            {
+                X = 2.8,
+                Y = 42.43
+            });
 
             var lista = new List<ObservablePoint>();
-
 
             lista.Add(new ObservablePoint
             {
@@ -77,10 +89,10 @@ namespace TCCFINAL
             {
                 Values = new ChartValues<ObservablePoint>(lista.AsEnumerable()),
                 StrokeThickness = 2,
-                Stroke = new SolidColorBrush(System.Windows.Media.Color.FromRgb(26, 122, 192)),
-                Fill = Brushes.Transparent,
+                Stroke = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(26, 122, 192)),
+                Fill = System.Windows.Media.Brushes.Transparent,
                 PointGeometrySize = 20,
-                PointForeground = new SolidColorBrush(System.Windows.Media.Color.FromRgb(34, 22, 27))
+                PointForeground = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(34, 22, 27))
             }); ;
 
             cartesianChart.Series.Add(new LineSeries
@@ -89,17 +101,38 @@ namespace TCCFINAL
                
             }); ;
 
+            cartesianChart.Series.Add(new LineSeries
+            {
+                Values = new ChartValues<ObservablePoint>(lista2.AsEnumerable()),
 
+            });
 
-            cartesianChart.Background = new SolidColorBrush(System.Windows.Media.Color.FromRgb(55, 32, 49));
+            cartesianChart.Series.Add(new LineSeries
+            {
+                Values = new ChartValues<ObservablePoint>(lista3.AsEnumerable()),
+
+            });
+
+            cartesianChart.Series.Add(new LineSeries
+            {
+                Values = new ChartValues<ObservablePoint>(lista4.AsEnumerable()),
+                StrokeThickness = 2,
+                Stroke = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(51, 102, 0)),
+                Fill = System.Windows.Media.Brushes.Transparent,
+                PointGeometrySize = 20,
+                PointForeground = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(51, 102, 0))
+            }); ;
+
+            //parte de colorir
+            cartesianChart.Background = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(55, 32, 49));
             cartesianChart.AxisX.Add(new Axis
             {
                 IsMerged = true,
                 Separator = new Separator
                 {
                     StrokeThickness = 0.5,
-                    StrokeDashArray = new DoubleCollection(4),
-                    Stroke = new SolidColorBrush(System.Windows.Media.Color.FromRgb(64, 79, 86))
+                    StrokeDashArray = new System.Windows.Media.DoubleCollection(4),
+                    Stroke = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(64, 79, 86))
 
                 },
                 
@@ -111,8 +144,8 @@ namespace TCCFINAL
                 Separator = new Separator
                 {
                     StrokeThickness = 0.5,
-                    StrokeDashArray = new DoubleCollection(4),
-                    Stroke = new SolidColorBrush(System.Windows.Media.Color.FromRgb(64, 79, 86))
+                    StrokeDashArray = new System.Windows.Media.DoubleCollection(4),
+                    Stroke = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(64, 79, 86))
 
                 }
             });

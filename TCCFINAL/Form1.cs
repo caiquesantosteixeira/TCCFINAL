@@ -15,7 +15,10 @@ namespace TCCFINAL
         public Form1()
         {
             InitializeComponent();
-       
+            this.Location = new Point(5, 5);
+            this.TopMost = true;
+            this.StartPosition = FormStartPosition.Manual;
+
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -78,17 +81,12 @@ namespace TCCFINAL
                 !string.IsNullOrEmpty(txtrm6.Text) &&
                 !string.IsNullOrEmpty(txtrm8.Text))
             {
-                var form2 = new Form2(
-                    Convert.ToDecimal(txtRm2.Text),
-                    Convert.ToDecimal(txtRm4.Text),
-                    Convert.ToDecimal(txtrm6.Text),
-                    Convert.ToDecimal(txtrm8.Text)
-                    );
+                var form2 = new Form2();
                 form2.ShowDialog();
             }
             else 
             {
-                MessageBox.Show("é necessário cálcular todas as distâncias");
+                MessageBox.Show("Favor preencher todos os campos!");
             }
         }
     }

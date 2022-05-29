@@ -15,6 +15,9 @@ namespace TCCFINAL
         public Form4()
         {
             InitializeComponent();
+            this.Location = new Point(5, 5);
+            this.TopMost = true;
+            this.StartPosition = FormStartPosition.Manual;
             PreencherGrid();
         }
 

@@ -10,25 +10,22 @@ using System.Windows.Forms;
 
 namespace TCCFINAL
 {
-    public partial class Form3 : Form
+    public partial class FrmCliente : Form
     {
-        public Form3()
+        public FrmCliente()
         {
             InitializeComponent();
+
             this.Location = new Point(5, 5);
             this.TopMost = true;
             this.StartPosition = FormStartPosition.Manual;
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            var form4 = new Form4();
-            form4.ShowDialog();
+            var frmInicial = new Form1();
+            frmInicial.ShowDialog();
+
         }
     }
 }
