@@ -50,13 +50,23 @@ namespace TCCFINAL
 
         private void calcularMedia(DecimalTextBox d1, DecimalTextBox d2, DecimalTextBox d3, DecimalTextBox d4, DecimalTextBox d5, TextBox ret) 
         {
-            var val1 = Convert.ToDecimal(d1.Text.Trim());
-            var val2 = Convert.ToDecimal(d2.Text.Trim());
-            var val3 = Convert.ToDecimal(d3.Text.Trim());
-            var val4 = Convert.ToDecimal(d4.Text.Trim());
-            var val5 = Convert.ToDecimal(d5.Text.Trim());
+            if (!string.IsNullOrEmpty(d1.Text) &&
+                !string.IsNullOrEmpty(d1.Text) &&
+                !string.IsNullOrEmpty(d1.Text) &&
+                !string.IsNullOrEmpty(d1.Text) &&
+                !string.IsNullOrEmpty(d1.Text)) 
+            {
+                var val1 = Convert.ToDecimal(d1.Text.Trim());
+                var val2 = Convert.ToDecimal(d2.Text.Trim());
+                var val3 = Convert.ToDecimal(d3.Text.Trim());
+                var val4 = Convert.ToDecimal(d4.Text.Trim());
+                var val5 = Convert.ToDecimal(d5.Text.Trim());
 
-            ret.Text = ((val1 + val2 + val3 + val4 + val5) / 5).ToString();
+                ret.Text = ((val1 + val2 + val3 + val4 + val5) / 5).ToString();
+            }
+           
+
+          
         }
 
         private void button4_Click(object sender, EventArgs e)
